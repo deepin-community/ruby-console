@@ -1,0 +1,21 @@
+From: Hideki Yamane <henrich@debian.org>
+Date: Sun, 7 Jun 2020 08:35:52 +0900
+Subject: do not use git
+
+---
+ console.gemspec | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/console.gemspec b/console.gemspec
+index bfe479d..e48ad3b 100644
+--- a/console.gemspec
++++ b/console.gemspec
+@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
+ 	
+ 	spec.homepage = "https://github.com/socketry/console"
+ 	
+-	spec.files = Dir.glob('{bake,lib}/**/*', File::FNM_DOTMATCH, base: __dir__)
++	spec.files = Dir.glob('{bake,lib,debian}/**/*', File::FNM_DOTMATCH, base: __dir__)
+ 	
+ 	spec.required_ruby_version = ">= 2.5"
+ 	

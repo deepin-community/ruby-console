@@ -1,0 +1,26 @@
+Source: ruby-console
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Team <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Hideki Yamane <henrich@debian.org>
+Build-Depends: debhelper-compat (= 13),
+               ruby-rspec (>= 3.0), ruby-rspec (<< 4.0),
+               ruby-fiber-local,
+               gem2deb (>= 1)
+Standards-Version: 4.5.1
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-console.git
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-console
+Homepage: https://github.com/socketry/console
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+Rules-Requires-Root: no
+
+Package: ruby-console
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${misc:Depends},
+         ${ruby:Depends},
+         ${shlibs:Depends}
+Description: Beautiful logging for Ruby
+ Provides beautiful console logging for Ruby applications.
+ Implements fast, buffered log output.

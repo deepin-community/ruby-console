@@ -1,0 +1,3 @@
+0001-do-not-search-debian-dir.patch
+0002-Drop-unnecessary-dependency-to-exec-autopkgtest.patch
+0003-require-version-from-console.patch

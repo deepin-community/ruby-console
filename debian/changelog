@@ -1,0 +1,30 @@
+ruby-console (1.10.1-2) unstable; urgency=medium
+
+  * Team upload.
+  * Replace 0003-Add-require_relative-to-lib.patch by
+    0003-require-version-from-console.patch to fix autopkgtests
+    (Closes: #975468)
+  * Bump Standards-Version to 4.5.1 (no changes needed)
+
+ -- Cédric Boutillier <boutil@debian.org>  Sun, 03 Jan 2021 16:09:56 +0100
+
+ruby-console (1.10.1-1) unstable; urgency=medium
+
+  * New upstream release
+  * debian/patches
+    - Refresh patches
+    - Add 0003-Add-require_relative-to-lib.patch
+
+ -- Hideki Yamane <henrich@debian.org>  Tue, 04 Aug 2020 19:56:59 +0900
+
+ruby-console (1.8.2-2) unstable; urgency=medium
+
+  * Source package upload for testing migration
+
+ -- Hideki Yamane <henrich@debian.org>  Sun, 02 Aug 2020 13:30:39 +0900
+
+ruby-console (1.8.2-1) unstable; urgency=medium
+
+  * Initial release (Closes: #962376)
+
+ -- Hideki Yamane <henrich@debian.org>  Sun, 07 Jun 2020 13:28:34 +0900

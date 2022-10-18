@@ -1,0 +1,24 @@
+From: =?utf-8?q?C=C3=A9dric_Boutillier?= <boutil@debian.org>
+Date: Sun, 3 Jan 2021 15:51:42 +0100
+Subject: require version from console
+
+ Load console version from lib/console.rb
+ We don't do it from spec/ as lib/ will be missing when running autopkgtest 
+Bug: https://github.com/socketry/console/issues/13
+Bug-Debian: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=975468
+---
+ lib/console.rb | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/lib/console.rb b/lib/console.rb
+index c7744bc..90ad372 100644
+--- a/lib/console.rb
++++ b/lib/console.rb
+@@ -20,6 +20,7 @@
+ # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ # THE SOFTWARE.
+ 
++require_relative 'console/version'
+ require_relative 'console/logger'
+ 
+ module Console
